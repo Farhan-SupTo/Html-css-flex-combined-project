@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: font-family: 'Poppins', sans-serif;
+}
+/* utility classes */
+.container{
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+
+
+}
+/* navbar styling */
+/* for desktop mode */
+.navbar input[type='checkbox'],
+.navbar .hamburger-lines{
+display: none;
+}
+.navbar{
+    box-shadow: 0px 5px 10px #aaa;
+    position: fixed;
+    width: 100%;
+    color: black;
+    background-color: white;
+    z-index: 10;
+    opacity: 0.8;
+}
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+    align-items: center;
+}
+.menu-items{
+      order: 2;
+      display: flex;
+      
+     
+}
+.menu-items li{
+    list-style: none;
+    margin-left: 1.70rem;
+    font-size: 1.8rem;
+    
+}
+.logo{
+     order: 1;
+     font-size: 3rem;
+}
+.navbar a{
+    color: #444;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3 ease-in-out;
+}
+.navbar a:hover{
+    color: rgb(35, 138, 104);
+}
+.showcase-area{
+    height: 50vh;
+    background-image: url(./img/header-image2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 1.6rem;
+}

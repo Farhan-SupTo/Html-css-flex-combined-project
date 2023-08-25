@@ -160,3 +160,115 @@ display: none;
     object-position: right; 
   
 }
+/* food category styling */
+.food{
+    padding: 5rem 0 10rem 0;
+}
+.food h2{
+    text-align: center;
+    font-weight: 400px;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    color: #555;
+    text-transform: uppercase;
+}
+.food-container{
+    display: flex;
+    justify-content: space-between;
+}
+.food-container img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    object-fit: cover;
+    object-position: center;
+}
+.image-container{
+         margin: 0 1rem;
+         position: relative;
+}
+.image-content{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    opacity: 0;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0.1s;
+
+
+}
+.image-content h3{
+    color: #fff;
+    font-size: 3rem;
+}
+.image-content a{
+    font-size: 1.2rem;
+}
+.image-container::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+    /* opacity: 0; */
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    transition: all 0.3s ease-in-out;
+    
+}
+.image-container:hover::after{
+    opacity: 1;
+    transform: scaleY(1);
+}
+.image-container:hover .image-content{
+    opacity: 1;
+    top: 40%;
+}
+/* food menu section styling */
+.food-menu-heading{
+    font-size: 3rem;
+    color: #666;
+    text-align: center;
+    font-weight: 400;
+}
+.food-menu-container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 0px 30px 0px;
+}
+.food-menu-container img{
+    display: block;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+
+}
+.food-menu-item{
+    display: flex;
+    flex: 1 1 600px;
+    margin-bottom: 3rem;
+    justify-content: space-evenly;
+   
+}
+.food-description{
+    margin: auto 1.5rem;
+}
+.food-description .food-title{
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+.food-description p{
+    font-size: 1.4rem;
+    color: #666;
+}
+.food-description .food-price{
+    color: rgb(25, 138, 104);
+    font-weight: 700;
+}
